@@ -1,65 +1,51 @@
-```md
-# 🗂️ File Commands — 10 Example Tasks
+# 🗂️ File Commands — Practice Tasks
 
-## 1) Create practice folder
+## 1) Create a folder
 ```
-┌─(sambath@parrot)-[~]
-└─$ mkdir mypractice
+$ mkdir mypractice
 ```
 
-## 2) Enter folder
+## 2) Move into the folder
 ```
-┌─(sambath@parrot)-[~]
-└─$ cd mypractice
+$ cd mypractice
 ```
 
 ## 3) Create files
 ```
-┌─(sambath@parrot)-[~/mypractice]
-└─$ touch a.txt b.txt c.txt
+$ touch a.txt b.txt c.txt
 ```
 
-## 4) Add text
+## 4) Add text to file
 ```
-┌─(sambath@parrot)-[~/mypractice]
-└─$ echo "Hello Sambath" > a.txt
+$ echo "Hello" > a.txt
 ```
 
-## 5) View file
+## 5) View file content
 ```
-┌─(sambath@parrot)-[~/mypractice]
-└─$ cat a.txt
-Hello Sambath
+$ cat a.txt
 ```
 
 ## 6) Copy file
 ```
-┌─(sambath@parrot)-[~/mypractice]
-└─$ cp a.txt copy.txt
+$ cp a.txt copy.txt
 ```
 
 ## 7) Rename file
 ```
-┌─(sambath@parrot)-[~/mypractice]
-└─$ mv b.txt tasks.txt
+$ mv b.txt tasks.txt
 ```
 
-## 8) Create folder
+## 8) Create subfolder
 ```
-┌─(sambath@parrot)-[~/mypractice]
-└─$ mkdir backup
+$ mkdir backup
 ```
 
 ## 9) Move file into folder
 ```
-┌─(sambath@parrot)-[~/mypractice]
-└─$ mv copy.txt backup/
+$ mv copy.txt backup/
 ```
 
 ## 10) Delete file
 ```
-┌─(sambath@parrot)-[~/mypractice]
-└─$ rm c.txt
+$ rm c.txt
 ```
-```
-
