@@ -1,25 +1,16 @@
-```md
-# 🌐 Networking — Example Tasks
+# 🌐 Networking Commands — Practice Tasks
 
-## 1) Ping Google
+## 1) Ping a website
 ```
-┌─(sambath@parrot)-[~]
-└─$ ping -c 2 google.com
-64 bytes from 142.250.xx.xx...
+$ ping -c 2 google.com
 ```
 
-## 2) Show IP
+## 2) Check your IP
 ```
-┌─(sambath@parrot)-[~]
-└─$ ip a
-inet 192.168.1.12/24
+$ ip a
 ```
 
-## 3) Curl headers
+## 3) Fetch website headers
 ```
-┌─(sambath@parrot)-[~]
-└─$ curl -I https://example.com
-HTTP/1.1 200 OK
+$ curl -I https://example.com
 ```
-```
-
