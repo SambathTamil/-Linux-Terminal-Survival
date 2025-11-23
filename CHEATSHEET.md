@@ -1,40 +1,43 @@
 ```md
-# 🐧 Linux Commands Cheatsheet — Human Friendly (With Parrot OS Output)
+# 🐧 Linux Commands Cheatsheet — Beginner Friendly
+
+This cheatsheet gives you clean Linux commands with simple explanations and real sample outputs.
 
 ---
 
 # 📍 1. BASIC COMMANDS
 
-## ➤ pwd
+## pwd — show current directory
 ```
-┌─(sambath@parrot)-[~]
+┌─(sambath@linux)-[~]
 └─$ pwd
 /home/sambath
 ```
 
-## ➤ ls
+## ls — list files
 ```
-┌─(sambath@parrot)-[~]
+┌─(sambath@linux)-[~]
 └─$ ls
 notes.txt  pictures  downloads
 ```
 
-## ➤ ls -la
+## ls -la — show hidden files
 ```
-┌─(sambath@parrot)-[~]
+┌─(sambath@linux)-[~]
 └─$ ls -la
 drwxr-xr-x  3 sambath sambath 4096 Jan 10 .
 drwxr-xr-x 25 sambath sambath 4096 Jan 10 ..
 -rw-r--r--  1 sambath sambath  220 Jan 10 .bashrc
 ```
 
-## ➤ cd
+## cd — change directory
 ```
-┌─(sambath@parrot)-[~]
+┌─(sambath@linux)-[~]
 └─$ cd Downloads
 ```
+
 ```
-┌─(sambath@parrot)-[~/Downloads]
+┌─(sambath@linux)-[~/Downloads]
 └─$ pwd
 /home/sambath/Downloads
 ```
@@ -43,33 +46,33 @@ drwxr-xr-x 25 sambath sambath 4096 Jan 10 ..
 
 # 📁 2. FILE & FOLDER COMMANDS
 
-## touch
+## touch — create file
 ```
-┌─(sambath@parrot)-[~]
+┌─(sambath@linux)-[~]
 └─$ touch file.txt
 ```
 
-## mkdir
+## mkdir — create folder
 ```
-┌─(sambath@parrot)-[~]
+┌─(sambath@linux)-[~]
 └─$ mkdir projects
 ```
 
-## cp
+## cp — copy file
 ```
-┌─(sambath@parrot)-[~]
-└─$ cp file.txt copy.txt
+┌─(sambath@linux)-[~]
+└─$ cp file.txt backup.txt
 ```
 
-## mv
+## mv — rename / move
 ```
-┌─(sambath@parrot)-[~]
+┌─(sambath@linux)-[~]
 └─$ mv file.txt notes.txt
 ```
 
-## rm
+## rm — delete file
 ```
-┌─(sambath@parrot)-[~]
+┌─(sambath@linux)-[~]
 └─$ rm notes.txt
 ```
 
@@ -79,35 +82,35 @@ drwxr-xr-x 25 sambath sambath 4096 Jan 10 ..
 
 ## who
 ```
-┌─(sambath@parrot)-[~]
+┌─(sambath@linux)-[~]
 └─$ who
 sambath :0 2025-03-21 10:32 (:0)
 ```
 
 ## whoami
 ```
-┌─(sambath@parrot)-[~]
+┌─(sambath@linux)-[~]
 └─$ whoami
 sambath
 ```
 
 ## id
 ```
-┌─(sambath@parrot)-[~]
+┌─(sambath@linux)-[~]
 └─$ id
 uid=1000(sambath) gid=1000(sambath) groups=1000(sambath),27(sudo)
 ```
 
 ## groups
 ```
-┌─(sambath@parrot)-[~]
+┌─(sambath@linux)-[~]
 └─$ groups
 sambath : sambath sudo
 ```
 
 ## grep user
 ```
-┌─(sambath@parrot)-[~]
+┌─(sambath@linux)-[~]
 └─$ grep -i sambath /etc/passwd
 sambath:x:1000:1000::/home/sambath:/bin/bash
 ```
@@ -118,39 +121,39 @@ sambath:x:1000:1000::/home/sambath:/bin/bash
 
 ## ping
 ```
-┌─(sambath@parrot)-[~]
+┌─(sambath@linux)-[~]
 └─$ ping -c 2 google.com
 64 bytes from 142.250.xx.xx: icmp_seq=1 ttl=118 time=23 ms
 ```
 
-## ip a
+## ip a — show IP info
 ```
-┌─(sambath@parrot)-[~]
+┌─(sambath@linux)-[~]
 └─$ ip a
 3: wlp3s0: <UP,RUNNING>
     inet 192.168.1.12/24
 ```
 
-## curl -I
+## curl — check server
 ```
-┌─(sambath@parrot)-[~]
+┌─(sambath@linux)-[~]
 └─$ curl -I https://example.com
 HTTP/1.1 200 OK
 ```
 
 ---
 
-# ⚙️ 5. PROCESSES
+# ⚙️ 5. PROCESS COMMANDS
 
-## top
+## top — live monitoring
 ```
-┌─(sambath@parrot)-[~]
+┌─(sambath@linux)-[~]
 └─$ top
 ```
 
-## ps aux | head
+## ps aux — show processes
 ```
-┌─(sambath@parrot)-[~]
+┌─(sambath@linux)-[~]
 └─$ ps aux | head
 root 1 0.0 0.1 168376 ? Ss init
 ```
@@ -159,34 +162,41 @@ root 1 0.0 0.1 168376 ? Ss init
 
 # 🔐 6. PERMISSIONS
 
-## chmod
+## chmod — give execute permission
 ```
-┌─(sambath@parrot)-[~]
+┌─(sambath@linux)-[~]
 └─$ chmod +x script.sh
 ```
 
-## chown
+## chown — change ownership
 ```
-┌─(sambath@parrot)-[~]
+┌─(sambath@linux)-[~]
 └─$ sudo chown sambath:sambath file.txt
 ```
 
 ---
 
-# 🗃️ 7. ARCHIVE
+# 🗃️ 7. ARCHIVE COMMANDS
 
-## tar create
+## Create tar.gz
 ```
-┌─(sambath@parrot)-[~]
+┌─(sambath@linux)-[~]
 └─$ tar -czvf backup.tar.gz projects/
 ```
 
-## tar extract
+## Extract tar.gz
 ```
-┌─(sambath@parrot)-[~]
+┌─(sambath@linux)-[~]
 └─$ tar -xzvf backup.tar.gz
 ```
 
-```
-```
+---
 
+# ⌨️ SHORTCUTS
+
+- Ctrl + C — stop  
+- Ctrl + R — search history  
+- !! — repeat last command  
+- Tab — autocomplete  
+
+```
