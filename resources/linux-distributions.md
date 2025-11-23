@@ -1,10 +1,7 @@
-```md
-# Linux Distributions Explained
+# 🐧 Linux Distributions (Beginner Overview)
 
-Ubuntu — beginner friendly  
-Parrot OS — cybersecurity  
-Kali Linux — pentesting  
-Fedora — latest features  
-Arch Linux — advanced users  
-```
-
+**Ubuntu** — Beginner friendly  
+**Debian** — Stable and reliable  
+**Fedora** — Latest features  
+**Kali Linux** — Pentesting  
+**Arch Linux** — Advanced users  
