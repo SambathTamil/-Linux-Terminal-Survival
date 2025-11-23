@@ -1,22 +1,16 @@
-```md
-# ⚙️ Processes — Example Tasks
+# ⚙️ Process Commands — Practice Tasks
 
-## Use top
+## Show running processes
 ```
-┌─(sambath@parrot)-[~]
-└─$ top
+$ ps aux
 ```
 
-## Search process
+## Live system monitoring
 ```
-┌─(sambath@parrot)-[~]
-└─$ ps aux | grep firefox
-```
-
-## Kill process
-```
-┌─(sambath@parrot)-[~]
-└─$ kill <PID>
-```
+$ top
 ```
 
+## Kill a process
+```
+$ kill <PID>
+```
