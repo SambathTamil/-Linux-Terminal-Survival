@@ -1,7 +1,6 @@
 # 🐧 Linux Commands Cheatsheet — Beginner Friendly
 
-This cheatsheet contains the essential Linux commands you will use daily.  
-Each command includes a simple explanation and real example output.
+This cheatsheet includes simple Linux commands with clear explanations and clean, copy-friendly examples.
 
 ---
 
@@ -9,166 +8,158 @@ Each command includes a simple explanation and real example output.
 
 ## 📌 `pwd` — Show current directory
 ```
-┌─(sambath@linux)-[~]
-└─$ pwd
-/home/sambath
+$ pwd
+/home/user
 ```
 
 ## 📌 `ls` — List files
 ```
-┌─(sambath@linux)-[~]
-└─$ ls
-notes.txt  pictures  downloads
+$ ls
+file.txt  downloads  pictures
 ```
 
 ## 📌 `ls -la` — Show hidden files
 ```
-┌─(sambath@linux)-[~]
-└─$ ls -la
-drwxr-xr-x  3 sambath sambath 4096 Jan 10 .
-drwxr-xr-x 25 sambath sambath 4096 Jan 10 ..
--rw-r--r--  1 sambath sambath 220 Jan 10 .bashrc
+$ ls -la
+drwxr-xr-x  3 user user 4096 Jan 10 .
+drwxr-xr-x 25 user user 4096 Jan 10 ..
+-rw-r--r--  1 user user  220 Jan 10 .bashrc
 ```
 
 ## 📌 `cd` — Change directory
 ```
-┌─(sambath@linux)-[~]
-└─$ cd Downloads
-```
-
-```
-┌─(sambath@linux)-[~/Downloads]
-└─$ pwd
-/home/sambath/Downloads
+$ cd Downloads
 ```
 
 ---
 
 # 📁 2. FILE & FOLDER COMMANDS
 
-## 📌 Create file
+## Create file
 ```
-┌─(sambath@linux)-[~]
-└─$ touch file.txt
-```
-
-## 📌 Create folder
-```
-┌─(sambath@linux)-[~]
-└─$ mkdir projects
+$ touch file.txt
 ```
 
-## 📌 Copy file
+## Create folder
 ```
-┌─(sambath@linux)-[~]
-└─$ cp file.txt backup.txt
-```
-
-## 📌 Rename / Move file
-```
-┌─(sambath@linux)-[~]
-└─$ mv file.txt notes.txt
+$ mkdir project
 ```
 
-## 📌 Delete file
+## Copy file
 ```
-┌─(sambath@linux)-[~]
-└─$ rm notes.txt
+$ cp file.txt backup.txt
+```
+
+## Move / Rename
+```
+$ mv file.txt notes.txt
+```
+
+## Delete file
+```
+$ rm notes.txt
 ```
 
 ---
 
-# 🧑‍💻 3. USER INFORMATION COMMANDS
+# 👤 3. USER INFORMATION COMMANDS
 
-## 📌 `who`
+## who
 ```
-┌─(sambath@linux)-[~]
-└─$ who
-sambath :0 2025-03-21 10:32 (:0)
-```
-
-## 📌 `whoami`
-```
-┌─(sambath@linux)-[~]
-└─$ whoami
-sambath
+$ who
+user :0 2025-03-21 10:32 (:0)
 ```
 
-## 📌 `id`
+## whoami
 ```
-┌─(sambath@linux)-[~]
-└─$ id
-uid=1000(sambath) gid=1000(sambath) groups=1000(sambath),27(sudo)
-```
-
-## 📌 `groups`
-```
-┌─(sambath@linux)-[~]
-└─$ groups
-sambath : sambath sudo
+$ whoami
+user
 ```
 
-## 📌 `grep user`
+## id
 ```
-┌─(sambath@linux)-[~]
-└─$ grep -i sambath /etc/passwd
-sambath:x:1000:1000::/home/sambath:/bin/bash
+$ id
+uid=1000(user) gid=1000(user) groups=1000(user),27(sudo)
+```
+
+## groups
+```
+$ groups
+user : user sudo
+```
+
+## grep user
+```
+$ grep -i user /etc/passwd
+user:x:1000:1000::/home/user:/bin/bash
 ```
 
 ---
 
 # 🌐 4. NETWORK COMMANDS
 
-## 📌 Ping
+## Ping
 ```
-┌─(sambath@linux)-[~]
-└─$ ping -c 2 google.com
-64 bytes from 142.250.xx.xx: icmp_seq=1 ttl=118 time=23 ms
+$ ping -c 2 google.com
 ```
 
-## 📌 Show IP
+## Show IP
 ```
-┌─(sambath@linux)-[~]
-└─$ ip a
-3: wlp3s0: <UP,RUNNING>
-    inet 192.168.1.12/24
+$ ip a
 ```
 
-## 📌 Curl headers
+## Curl headers
 ```
-┌─(sambath@linux)-[~]
-└─$ curl -I https://example.com
-HTTP/1.1 200 OK
+$ curl -I https://example.com
 ```
 
 ---
 
 # ⚙️ 5. PROCESS COMMANDS
 
-## 📌 top — Live processes
+## Show live processes
 ```
-┌─(sambath@linux)-[~]
-└─$ top
+$ top
 ```
 
-## 📌 ps aux
+## Show running processes
 ```
-┌─(sambath@linux)-[~]
-└─$ ps aux | head
-root 1 0.0 0.1 168376 ? Ss init
+$ ps aux
 ```
 
 ---
 
 # 🔐 6. PERMISSIONS
 
-## 📌 chmod
+## Make script executable
 ```
-┌─(sambath@linux)-[~]
-└─$ chmod +x script.sh
+$ chmod +x script.sh
 ```
 
-## 📌 chown
+## Change file owner
 ```
-┌─(sambath@linux)-[~]
-└─$ sudo chown
+$ sudo chown user:user file.txt
+```
+
+---
+
+# 📦 7. ARCHIVE COMMANDS
+
+## Create tar.gz
+```
+$ tar -czvf backup.tar.gz project/
+```
+
+## Extract tar.gz
+```
+$ tar -xzvf backup.tar.gz
+```
+
+---
+
+# ⌨️ 8. SHORTCUTS
+
+- Ctrl + C → stop command  
+- Ctrl + R → search history  
+- !! → repeat last command  
+- Tab → autocomplete  
